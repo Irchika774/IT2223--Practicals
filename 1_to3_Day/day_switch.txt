@@ -1,0 +1,24 @@
+day = input('Enter the day (1-5) : ');
+
+switch day
+    case 1
+        disp('Monday');
+    case 2
+        disp('Tuesday');
+    case 3
+        disp('Wednesday');
+    case 4
+        disp('Thursday');
+    case 5
+        disp('Friday');
+    otherwise 
+        disp('Invalid day');
+end
+
+output
+>> day_switch
+Enter the day (1-5) : 3
+Wednesday
+>> day_switch
+Enter the day (1-5) : 8
+Invalid day

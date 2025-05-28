@@ -1,0 +1,41 @@
+num1=input('Enter number_1: ');
+num2=input('Enter number_2: ');
+op=input('Enter an operator(+,-,*,/): ','s');
+
+switch op
+    case '+'
+        disp(num1 + num2);
+    case '-'
+        disp(num1 - num2);
+    case '*'
+        result = num1*num2;
+         fprintf('Result: %.2f\n' , result)
+
+    case '/'
+    if num2 ~=0
+         result = num1/num2;
+         fprintf('Result: %.2f\n' , result)
+    else
+        disp('Error:Division by zero.')
+    end
+    otherwise
+        disp('Invalid opeartor');
+end
+
+output
+>> calculator
+Enter number_1: 10
+Enter number_2: 5
+Enter an operator(+,-,*,/): /
+Result: 2.00
+>> calculator
+Enter number_1: 3
+Enter number_2: 4
+Enter an operator(+,-,*,/): +
+     7
+
+>> calculator
+Enter number_1: 4
+Enter number_2: 2
+Enter an operator(+,-,*,/): *
+Result: 8.00

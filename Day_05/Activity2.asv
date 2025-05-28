@@ -1,0 +1,46 @@
+%create array with 1000 numbers
+%use tic,toc measure time
+ %Linear search
+ %Binary search
+%components results
+
+
+ arr=[1,2,3,4,5,6,7,8,9,67,89,92];
+ n=arr.length;
+ target=67;
+ found=false;
+
+ tic;
+
+for i=1:length(arr)
+
+    if arr(i)==target
+        found=true;  
+        index=i;
+        disp(index);
+     break;
+    end
+end
+
+elapsedTime = toc; 
+if(found==true)
+   fprintf('Elapsed time:%fseconds\n',elapsedTime);
+end
+
+printf('Binary search begining');
+
+low=1;
+high=length(arr);
+while(low<high)
+   mid=(low+high)/2;
+  if arr(mid)==target
+      p
+  end
+end
+
+BinaryS(low,high){
+
+ while (left <= right) 
+
+ end
+}

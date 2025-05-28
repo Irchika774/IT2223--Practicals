@@ -1,0 +1,30 @@
+arr=1:1000;
+target=450;
+n=length(arr);
+found =false;
+
+tic;
+for i=1:n
+    if arr(i) == target
+
+        found=true;
+        index=i;
+        break;
+    end
+end
+if found
+    printf("The target element is found at index %d\n", index);
+
+
+else
+    disp("target element is not found");
+end
+toc;
+
+low=1;
+high=length(arr);
+
+tic;
+while low<=high
+    mid 
+end
